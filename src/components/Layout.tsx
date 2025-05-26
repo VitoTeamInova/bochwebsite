@@ -29,9 +29,11 @@ const Layout = () => {
     return (
       <div className="fixed inset-0 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 flex items-center justify-center z-50">
         <div className="animate-fade-in">
-          <div className="w-96 h-96 bg-gradient-to-br from-amber-400 via-amber-500 to-amber-600 rounded-full flex items-center justify-center shadow-2xl">
-            <div className="text-white text-6xl font-bold tracking-wider">LOGO</div>
-          </div>
+          <img 
+            src="/lovable-uploads/e1d4f543-2a8c-4a89-b2fe-60176ff3033f.png" 
+            alt="BOCH Advogados" 
+            className="max-w-md max-h-96 object-contain"
+          />
         </div>
       </div>
     );
@@ -40,13 +42,15 @@ const Layout = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Header with Logo and Navigation */}
-      <header className="bg-white shadow-lg sticky top-0 z-40">
+      <header className="bg-slate-900 shadow-lg sticky top-0 z-40">
         <div className="container mx-auto px-4">
           {/* Logo Section */}
-          <div className="flex justify-center py-4 border-b border-gray-100">
-            <div className="w-32 h-24 bg-gradient-to-br from-amber-400 via-amber-500 to-amber-600 rounded-lg flex items-center justify-center shadow-md">
-              <div className="text-white text-2xl font-bold tracking-wider">LOGO</div>
-            </div>
+          <div className="flex justify-center py-4 border-b border-slate-700">
+            <img 
+              src="/lovable-uploads/e1d4f543-2a8c-4a89-b2fe-60176ff3033f.png" 
+              alt="BOCH Advogados" 
+              className="h-24 object-contain"
+            />
           </div>
 
           {/* Navigation */}
@@ -56,10 +60,10 @@ const Layout = () => {
                 <li key={item.path}>
                   <Link
                     to={item.path}
-                    className={`px-4 py-2 text-sm font-medium transition-all duration-300 rounded-md hover:bg-slate-100 ${
+                    className={`px-4 py-2 text-sm font-medium transition-all duration-300 rounded-md hover:bg-slate-800 ${
                       location.pathname === item.path
-                        ? 'text-amber-600 bg-amber-50 border-b-2 border-amber-600'
-                        : 'text-slate-700 hover:text-amber-600'
+                        ? 'text-amber-400 bg-slate-800 border-b-2 border-amber-400'
+                        : 'text-gray-300 hover:text-amber-400'
                     }`}
                   >
                     {item.name}
@@ -132,7 +136,7 @@ const Layout = () => {
 
           {/* Copyright */}
           <div className="border-t border-gray-700 pt-8 text-center text-gray-400">
-            <p>&copy; 2024 Escritório de Advocacia. Todos os direitos reservados.</p>
+            <p>&copy; 2024 BOCH Advogados. Todos os direitos reservados.</p>
           </div>
         </div>
       </footer>
