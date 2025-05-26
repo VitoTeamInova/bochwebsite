@@ -4,7 +4,7 @@ import { Scale, Users, Award, Clock } from 'lucide-react';
 
 const Inicio = () => {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-gray-800">
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white py-20">
         <div className="container mx-auto px-4">
@@ -28,62 +28,62 @@ const Inicio = () => {
       </section>
 
       {/* Features Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-gray-800">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-slate-900 mb-4">Por que Escolher Nosso Escritório?</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
+            <h2 className="text-3xl font-bold text-white mb-4">Por que Escolher Nosso Escritório?</h2>
+            <p className="text-gray-300 max-w-2xl mx-auto">
               Oferecemos soluções jurídicas personalizadas com foco em resultados e atendimento de excelência.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="text-center p-6 rounded-lg hover:shadow-lg transition-shadow">
+            <div className="text-center p-6 rounded-lg hover:shadow-lg transition-shadow bg-gray-700">
               <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Scale className="w-8 h-8 text-amber-600" />
               </div>
-              <h3 className="text-xl font-semibold mb-2 text-slate-900">Experiência</h3>
-              <p className="text-gray-600">Mais de 20 anos de atuação em diversas áreas do direito.</p>
+              <h3 className="text-xl font-semibold mb-2 text-white">Experiência</h3>
+              <p className="text-gray-300">Mais de 20 anos de atuação em diversas áreas do direito.</p>
             </div>
 
-            <div className="text-center p-6 rounded-lg hover:shadow-lg transition-shadow">
+            <div className="text-center p-6 rounded-lg hover:shadow-lg transition-shadow bg-gray-700">
               <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Users className="w-8 h-8 text-amber-600" />
               </div>
-              <h3 className="text-xl font-semibold mb-2 text-slate-900">Equipe Especializada</h3>
-              <p className="text-gray-600">Advogados altamente qualificados e especializados.</p>
+              <h3 className="text-xl font-semibold mb-2 text-white">Equipe Especializada</h3>
+              <p className="text-gray-300">Advogados altamente qualificados e especializados.</p>
             </div>
 
-            <div className="text-center p-6 rounded-lg hover:shadow-lg transition-shadow">
+            <div className="text-center p-6 rounded-lg hover:shadow-lg transition-shadow bg-gray-700">
               <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Award className="w-8 h-8 text-amber-600" />
               </div>
-              <h3 className="text-xl font-semibold mb-2 text-slate-900">Resultados</h3>
-              <p className="text-gray-600">Histórico comprovado de casos bem-sucedidos.</p>
+              <h3 className="text-xl font-semibold mb-2 text-white">Resultados</h3>
+              <p className="text-gray-300">Histórico comprovado de casos bem-sucedidos.</p>
             </div>
 
-            <div className="text-center p-6 rounded-lg hover:shadow-lg transition-shadow">
+            <div className="text-center p-6 rounded-lg hover:shadow-lg transition-shadow bg-gray-700">
               <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Clock className="w-8 h-8 text-amber-600" />
               </div>
-              <h3 className="text-xl font-semibold mb-2 text-slate-900">Agilidade</h3>
-              <p className="text-gray-600">Atendimento rápido e eficiente para suas necessidades.</p>
+              <h3 className="text-xl font-semibold mb-2 text-white">Agilidade</h3>
+              <p className="text-gray-300">Atendimento rápido e eficiente para suas necessidades.</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* About Section */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-gray-700">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold text-slate-900 mb-6">Sobre Nosso Escritório</h2>
-              <p className="text-gray-600 mb-6">
+              <h2 className="text-3xl font-bold text-white mb-6">Sobre Nosso Escritório</h2>
+              <p className="text-gray-300 mb-6">
                 Fundado em 2000, nosso escritório de advocacia tem se dedicado a oferecer serviços jurídicos 
                 de excelência, sempre priorizando a ética, transparência e os melhores resultados para nossos clientes.
               </p>
-              <p className="text-gray-600 mb-6">
+              <p className="text-gray-300 mb-6">
                 Nossa equipe é formada por advogados experientes e especializados em diversas áreas do direito, 
                 garantindo atendimento personalizado e soluções eficazes para cada caso.
               </p>
