@@ -10,7 +10,7 @@ const Layout = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowIntro(false);
-    }, 3000);
+    }, 4000); // 2 seconds zoom + 2 seconds display
 
     return () => clearTimeout(timer);
   }, []);
@@ -27,12 +27,12 @@ const Layout = () => {
 
   if (showIntro) {
     return (
-      <div className="fixed inset-0 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 flex items-center justify-center z-50">
-        <div className="animate-fade-in">
+      <div className="fixed inset-0 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 flex items-center justify-center z-50 overflow-hidden">
+        <div className="animate-zoom-in">
           <img 
             src="/lovable-uploads/e1d4f543-2a8c-4a89-b2fe-60176ff3033f.png" 
             alt="BOCH Advogados" 
-            className="max-w-md max-h-96 object-contain"
+            className="w-screen h-screen object-contain"
           />
         </div>
       </div>
