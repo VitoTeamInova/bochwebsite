@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { Outlet, Link, useLocation } from 'react-router-dom';
 import { Facebook, Linkedin, MessageCircle } from 'lucide-react';
+import logoImage from '../assets/logo.png';
 
 const Layout = () => {
   const [showIntro, setShowIntro] = useState(true);
@@ -30,7 +31,7 @@ const Layout = () => {
       <div className="fixed inset-0 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 flex items-center justify-center z-50 overflow-hidden">
         <div className="animate-zoom-in">
           <img 
-            src="/lovable-uploads/e1d4f543-2a8c-4a89-b2fe-60176ff3033f.png"
+            src={logoImage}
             alt="BOCH Advogados" 
             className="w-screen h-screen object-contain"
           />
@@ -47,7 +48,7 @@ const Layout = () => {
           {/* Logo Section */}
           <div className="flex justify-center py-4 border-b border-slate-700">
             <img 
-              src="/lovable-uploads/e1d4f543-2a8c-4a89-b2fe-60176ff3033f.png"
+              src={logoImage}
               alt="BOCH Advogados" 
               className="h-24 object-contain"
             />
