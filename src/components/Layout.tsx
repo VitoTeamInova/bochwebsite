@@ -34,6 +34,11 @@ const Layout = () => {
             src={logoImage}
             alt="BOCH Advogados" 
             className="w-screen h-screen object-contain"
+            onError={(e) => {
+              const target = e.currentTarget as HTMLImageElement;
+              if (target.src.includes('logo')) return;
+              target.src = '/lovable-uploads/e1d4f543-2a8c-4a89-b2fe-60176ff3033f.png';
+            }}
           />
         </div>
       </div>
@@ -51,7 +56,12 @@ const Layout = () => {
               src={logoImage}
               alt="BOCH Advogados" 
               className="h-24 object-contain"
-            />
+              onError={(e) => {
+                const target = e.currentTarget as HTMLImageElement;
+                if (target.src.includes('logo')) return;
+                target.src = '/lovable-uploads/e1d4f543-2a8c-4a89-b2fe-60176ff3033f.png';
+              }}
+             />
           </div>
 
           {/* Navigation */}
